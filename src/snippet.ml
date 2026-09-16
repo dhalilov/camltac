@@ -1,5 +1,7 @@
 (** Representation of OCaml code snippets. *)
 
+open Names
+
 (** {1 Snippets} *)
 
 type t =
@@ -93,8 +95,12 @@ module Scaffold = struct
     let file =
       match loc.fname with
       | ToplevelInput ->
-         (* FIXME: Obtain original file name under ProofGeneral's toplevel. *)
-         "_toplevel_"
+         (* Use the module name set by the [-top] option, if any. *)
+         let _, top_module_name = Libnames.split_dirpath (Lib.library_dp ()) in
+         begin match Id.to_string top_module_name with
+         | "Top" (* default *) -> "_toplevel_"
+         | name -> name ^ ".v"
+         end
       | InFile { file; _ } -> file
     in
     add_line_number_directive ~line:loc.line_nb ~file scaffold;
