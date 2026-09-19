@@ -99,3 +99,33 @@ Definition zero := ocaml:(let* z = {%constr| 0 |} in exact_no_check z).
 Print zero.
 (* zero = 0 : nat *)
 ```
+
+## Citations
+
+### Rocqshop 2026
+
+```bibtex
+@InProceedings{CamltacRocqshop2026,
+  author       = {Halilovic, Dario and Pit-Claudel, Clément},
+  title        = {Camltac: OCaml as a Tactic Language},
+  booktitle    = {Rocqshop 2026},
+  year         = {2026},
+  month        = jul,
+  address      = {Lisbon, Portugal}
+  url          = {https://coq-workshop.gitlab.io/2026/files/EA6.pdf}
+}
+```
+
+### Master thesis
+
+```bibtex
+@Misc{CamltacThesis,
+  author       = {Halilovic, Dario},
+  title        = {Camltac: OCaml as a Tactic Language},
+  institution  = {École Polytechnique Fédérale de Lausanne},
+  address      = {Lausanne},
+  year         = {2026},
+  month        = jul,
+  howpublished = {\url{https://infoscience.epfl.ch/handle/20.500.14299/266723}}
+}
+```
