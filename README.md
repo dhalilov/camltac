@@ -19,6 +19,8 @@ Have a look at the [tour of Camltac](./examples/Tour.v) for an overview of Camlt
 - The [quickstart](#quickstart) section contains quick examples that you can immediately run.
 - The [`examples`](./examples/) directory has more self-contained examples of using Camltac.
 
+Camltac's implementation is detailled in [Dario Halilovic's Master thesis](https://infoscience.epfl.ch/entities/publication/926430ae-7511-4498-bb12-5c8cf559ec33). 
+
 ## Setup
 
 Install Camltac through `opam` by using the following commands:
