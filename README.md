@@ -1,5 +1,8 @@
 # Camltac: OCaml as a Tactic Language
 
+[![Rocqshop 2026](https://img.shields.io/badge/Rocqshop%202026-%23ff540a?style=for-the-badge)](https://coq-workshop.gitlab.io/2026/files/EA6.pdf)
+[![Master thesis](https://img.shields.io/badge/Master%20thesis-red?style=for-the-badge)](https://infoscience.epfl.ch/handle/20.500.14299/266723)
+
 Camltac is an OCaml plugin for Rocq that allows OCaml code within Rocq scripts. Camltac lets you define OCaml meta-programs and tactics, and run them in the current Rocq state without the friction and boilerplate of setting up a plugin.
 
 <center>
