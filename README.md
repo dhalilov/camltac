@@ -97,7 +97,7 @@ Proof.
 ```
 
 Finally, Camltac can also run in tactic-in-term mode, similarly to `ltac:(…)` and `ltac2:(…)`:
-```
+```coq
 Definition zero := ocaml:(let* z = {%constr| 0 |} in exact_no_check z).
 Print zero.
 (* zero = 0 : nat *)
