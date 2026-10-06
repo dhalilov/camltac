@@ -30,6 +30,10 @@ Have a look at the [tour of Camltac](./examples/Tour.v) for an overview of Camlt
 
 ## Features
 
+<div align="center">
+  <img src="etc/showcase.png" width="75%" alt="Showcase image of Camltac" />
+</div>
+
 * **Quotations** for building terms: `{%constr| … |}`, `{%open_constr| … |}`, `{%preterm| … |}`, etc;
 
 * **Antiquotations**, e.g., `{%constr| %{x} + %{y} |}`;
