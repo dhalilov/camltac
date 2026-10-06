@@ -28,6 +28,28 @@ Camltac is both a tactic and a meta-programming language:
 
 Have a look at the [tour of Camltac](./examples/Tour.v) for an overview of Camltac's features, or the [`examples`](./examples) directory for self-contained examples of using Camltac.
 
+## Features
+
+* **Quotations** for building terms: `{%constr| … |}`, `{%open_constr| … |}`, `{%preterm| … |}`, etc;
+
+* **Antiquotations**, e.g., `{%constr| %{x} + %{y} |}`;
+
+* **Pattern-matching over terms**: `match%rocq x with`, `match%lazy x with`, `match%multi x with`;
+
+* **Pattern-matching over goals**: `match%rocq goal with`, `match%lazy goal with`, `match%multi goal with`;
+
+* **Modules**: `Camltac Module M := ocaml:{{ … }}.`;
+
+* **Interoperability with Ltac2**;
+
+* **Ltac2 APIs** and **tacticals**;
+
+* Support for **OCaml libraries and preprocessors**;
+
+* Access to **Rocq state and APIs**;
+
+* …
+
 ## Quickstart
 
 Camltac is available on Rocq's opam repository and supports Rocq ≥ 9.0. To use Camltac:
