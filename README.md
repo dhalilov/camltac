@@ -22,9 +22,9 @@ Camltac is an **OCaml plugin for Rocq that lets you run OCaml code within Rocq s
 
 Camltac is both a tactic and a meta-programming language:
 
-1. As a tactic language, Camltac provides constructs inspired by Ltac2, including term quotations (`{%constr| … |}`), pattern matching (`match%rocq`), and antiquotations using [`ppx_rocq`](https://github.com/epfl-systemf/ppx_rocq). Camltac makes it easy to define new tactics by providing the usual tacticals from Ltac2, and a dedicated <abbr title="Foreign Function Interface">FFI</abbr> with [Ltac](src/api/ltac.ml) and [Ltac2](src/api/ltac2.ml).
+* As a tactic language, Camltac provides constructs inspired by Ltac2, including term quotations (`{%constr| … |}`), pattern matching (`match%rocq`), and antiquotations using [`ppx_rocq`](https://github.com/epfl-systemf/ppx_rocq). Camltac makes it easy to define new tactics by providing the usual tacticals from Ltac2, and a dedicated <abbr title="Foreign Function Interface">FFI</abbr> with [Ltac](src/api/ltac.ml) and [Ltac2](src/api/ltac2.ml).
 
-2. As a meta-programming language, Camltac offers a complete meta-programming experience by allowing access to Rocq's internal APIs and state. To ensure stability, Camltac includes the [Ltac2 APIs](https://github.com/epfl-systemf/mltac2) which provide a simple entry point to meta-programming in OCaml.
+* As a meta-programming language, Camltac offers a complete meta-programming experience by allowing access to Rocq's internal APIs and state. To ensure stability, Camltac includes the [Ltac2 APIs](https://github.com/epfl-systemf/mltac2) which provide a simple entry point to meta-programming in OCaml.
 
 Have a look at the [tour of Camltac](./examples/Tour.v) for an overview of Camltac's features, or the [`examples`](./examples) directory for self-contained examples of using Camltac.
 
@@ -34,25 +34,30 @@ Have a look at the [tour of Camltac](./examples/Tour.v) for an overview of Camlt
   <img src="etc/showcase.png" width="75%" alt="Showcase image of Camltac" />
 </div>
 
-* **Quotations** for building terms: `{%constr| … |}`, `{%open_constr| … |}`, `{%preterm| … |}`, etc;
+**Quotations** for building terms: 
+  `{%constr| … |}`, `{%open_constr| … |}`, `{%preterm| … |}`, etc.
 
-* **Antiquotations**, e.g., `{%constr| %{x} + %{y} |}`;
+**Antiquotations**:
+  `{%constr| %{x} + %{y} |}`
 
-* **Pattern-matching over terms**: `match%rocq x with`, `match%lazy x with`, `match%multi x with`;
+**Pattern-matching over terms**:
+  `match%rocq x with`, `match%lazy x with`, `match%multi x with`
 
-* **Pattern-matching over goals**: `match%rocq goal with`, `match%lazy goal with`, `match%multi goal with`;
+**Pattern-matching over goals**:
+  `match%rocq goal with`, `match%lazy goal with`, `match%multi goal with`
 
-* **Modules**: `Camltac Module M := ocaml:{{ … }}.`;
+**Modules**: 
+  `Camltac Module M := ocaml:{{ … }}.`
 
-* **Interoperability with Ltac2**;
+**Interoperability with Ltac2**;
 
-* **Ltac2 APIs** and **tacticals**;
+**Ltac2 APIs** and **tacticals**;
 
-* Support for **OCaml libraries and preprocessors**;
+Support for **OCaml libraries and preprocessors**;
 
-* Access to **Rocq state and APIs**;
+Access to **Rocq state and APIs**;
 
-* …
+etc.
 
 ## Quickstart
 
