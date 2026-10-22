@@ -54,7 +54,7 @@ Ltac2 APIs and tacticals:
   See `docs/Ltac2 <docs/Ltac2>`_.
 
 Support for OCaml libraries and preprocessors:
-  ``#[ppx(ppx_deriving.show)] Camltac Run ocaml:{{ … }}``
+  See `examples/ParallelTactics.v <examples/ParallelTactics.v>`_ and `examples/Tracing.v <examples/Tracing.v>`_.
 
 Access to Rocq state and APIs:
   See `examples/Counter.v <examples/Counter.v>`_.
