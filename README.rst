@@ -61,33 +61,24 @@ Access to Rocq state and APIs:
 
 etc.
 
-Quickstart
-==========
+Setup
+=====
 
-Camltac is available on Rocq's opam repository and supports Rocq ≥ 9.0. To use Camltac:
+Camltac is available on `Rocq's opam repository <https://github.com/rocq-prover/opam>`_ and supports Rocq ≥ 9.0.
 
-1. Add the ``rocq-released`` opam repository:
-
+To install from opam:
    .. code:: sh
 
-      opam update
-      opam repo add rocq-released https://rocq-prover.github.io/opam/released/
+      opam install rocq-camltac
 
-2. Install Camltac:
-
+To install from Git:
    .. code:: sh
 
-      opam pin add https://github.com/epfl-systemf/camltac.git
+      git clone https://github.com/epfl-systemf/camltac.git
+      cd camltac
+      dune build @install -p rocq-camltac
 
-   **Note**: If you wish to install ``camltac-examples``, you'll need Rocq 9.2 and OCaml 5.4.
-
-3. Import Camltac in your Rocq files:
-
-   .. code:: coq
-
-      Require Import Camltac.Camltac.
-
-4. You're ready to go! 🎉
+Then, import Camltac in your Rocq files (``Require Import Camltac.Camltac.``) and you're ready to go! 🎉
 
 Contributing
 ============
