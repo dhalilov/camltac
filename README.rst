@@ -6,7 +6,7 @@
    <a href="./tutorials">Tutorials</a> ·
    <a href="./how-tos">How-to guides</a> ·
    <a href="./docs">Docs</a> ·
-   <a href="https://infoscience.epfl.ch/entities/publication/926430ae-7511-4498-bb12-5c8cf559ec33">Master's thesis</a>
+   <a href="./reference">Reference</a>
    </p>
 
 .. role:: raw-html(raw)
