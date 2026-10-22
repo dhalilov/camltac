@@ -51,7 +51,7 @@ Interoperability with Ltac2:
   ``Ltac2.FFI.define "my_tactic" (constr @-> tac constr) (fun t -> …)``
 
 Ltac2 APIs and tacticals:
-  See `docs/Ltac2 <docs/Ltac2>`_.
+  See the `Ltac2 APIs reference <docs/ltac2>`_.
 
 Support for OCaml libraries and preprocessors:
   See `examples/ParallelTactics.v <examples/ParallelTactics.v>`_ and `examples/Tracing.v <examples/Tracing.v>`_.
