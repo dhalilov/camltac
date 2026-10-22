@@ -23,7 +23,7 @@ Camltac is both a tactic and a meta-programming language:
 
 * As a meta-programming language, Camltac offers a complete meta-programming experience by allowing access to Rocq's internal APIs and state. To ensure stability, Camltac includes the `Ltac2 APIs <https://github.com/epfl-systemf/mltac2>`_ which provide a simple entry point to meta-programming in OCaml.
 
-Have a look at the `tour of Camltac <./examples/Tour.v>`_ for an overview of Camltac's features, or the `examples <./examples>`_ directory for self-contained examples of using Camltac.
+Have a look at the `tour of Camltac <./examples/Tour.v>`_ for a walkthrough of Camltac's features, or the `examples <./examples>`_ directory for self-contained examples of using Camltac.
 
 Features
 ========
