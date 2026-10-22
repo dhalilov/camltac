@@ -66,7 +66,7 @@ Setup
 
 Camltac is available on `Rocq's opam repository <https://github.com/rocq-prover/opam>`_ and supports Rocq ≥ 9.0.
 
-To install from opam:
+To install from opam (`rocq-released`):
    .. code:: sh
 
       opam install rocq-camltac
