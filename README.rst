@@ -47,13 +47,17 @@ Pattern-matching over goals:
 Modules:
   ``Camltac Module M := ocaml:{{ … }}.``
 
-Interoperability with Ltac2;
+Interoperability with Ltac2:
+  ``Ltac2.FFI.define "my_tactic" (constr @-> tac constr) (fun t -> …)``
 
-Ltac2 APIs and tacticals;
+Ltac2 APIs and tacticals:
+  See `docs/Ltac2 <docs/Ltac2>`_.
 
-Support for OCaml libraries and preprocessors;
+Support for OCaml libraries and preprocessors:
+  ``#[ppx(ppx_deriving.show)] Camltac Run ocaml:{{ … }}``
 
-Access to Rocq state and APIs;
+Access to Rocq state and APIs:
+  See `examples/Counter.v <examples/Counter.v>`_.
 
 etc.
 
@@ -79,7 +83,7 @@ Camltac is available on Rocq's opam repository and supports Rocq ≥ 9.0. To use
 
 3. Import Camltac in your Rocq files:
 
-   .. code:: rocq
+   .. code:: coq
 
       Require Import Camltac.Camltac.
 
