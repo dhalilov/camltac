@@ -1,4 +1,4 @@
 sphinx
 shibuya
 sphinx-copybutton
-alectryon
+alectryon>=2.0
